@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pacifico&display=swap");
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -228,4 +229,16 @@ html {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+nav a {
+  font-size: 1rem;
+  color: #1A315C;
+  letter-spacing: 1.4px;
+  font-family: "Lato";
+  text-decoration: none;
+}
+
+html {
+  font-size: 125%;
 }/*# sourceMappingURL=style.css.map */

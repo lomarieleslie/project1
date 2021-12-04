@@ -4,6 +4,13 @@ $turquoiseBlue:#0CADC0;
 $black: #1E1713;
 $blackTwo:#161515;
 $white: #fff;
+$baseFont:"Lato";
 
 @import "normalize";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pacifico&display=swap');
+@import "nav";
+
+html{
+    font-size: 125%;
+}
 

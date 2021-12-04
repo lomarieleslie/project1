@@ -1,0 +1,12 @@
+@mixin navFont($sizeValue) {
+    font-size: $sizeValue;
+    color: $darkSlateBlue;
+    letter-spacing: 1.4px;
+    font-family: "Lato";
+    text-decoration: none;
+}
+
+nav a {
+    @include navFont(1rem)
+}
+
