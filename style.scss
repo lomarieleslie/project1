@@ -14,3 +14,18 @@ html{
     font-size: 125%;
 }
 
+h2 {
+    @include header(2.5rem);
+    height:300px;
+    width: 750px;
+    position: absolute;
+    z-index: 2;
+    top: 200px;
+
+}
+
+.headerHome{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}

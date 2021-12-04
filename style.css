@@ -231,14 +231,73 @@ html {
   overflow: hidden;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 nav a {
-  font-size: 1rem;
+  font-size: 0.75rem;
   color: #1A315C;
   letter-spacing: 1.4px;
   font-family: "Lato";
   text-decoration: none;
+  text-transform: uppercase;
+  list-style: none;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+h1 {
+  font-size: 1rem;
+  color: #161515;
+  font-family: "Pacifico";
+  margin: 0;
+  font-weight: lighter;
+  letter-spacing: 2px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 35px;
+  margin-left: 35px;
+  margin-right: 35px;
+  width: 100%;
+  position: absolute;
+  z-index: 3;
+}
+
+nav ul li a.activePage {
+  border-bottom: #0CADC0 1px solid;
 }
 
 html {
   font-size: 125%;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #1A315C;
+  font-family: "Pacifico";
+  margin: 0;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  height: 300px;
+  width: 750px;
+  position: absolute;
+  z-index: 2;
+  top: 200px;
+}
+
+.headerHome {
+  position: relative;
+  z-index: 1;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
