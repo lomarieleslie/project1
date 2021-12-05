@@ -10,6 +10,14 @@ $baseFont:"Lato";
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pacifico&display=swap');
 @import "nav";
 
+@mixin paragraphBlack($sizeValue) {
+    font-size: $sizeValue;
+    font-family: "Lato";
+    color: $black;
+    letter-spacing: 2px;
+    line-height: 23px;
+}
+
 html{
     font-size: 125%;
 }
@@ -27,7 +35,7 @@ h2 {
     margin-left: auto;
     margin-right: auto;
     z-index: 2;
-    top: 200px;
+    top: 135px;
     left:35px;
 }
 
@@ -46,10 +54,36 @@ header{
     width: 50%;
     position: relative;
     z-index: 4;
-    top: -275px;
+    top: -320px;
 }
 
 h3{
     @include header(1.5rem);
 
+}
+
+.learnNewTechniques{
+    height: auto;
+    width: 100%;
+    position: relative;
+    top:-240px;
+    background-color: $lightSkyBlue;
+    padding:200px
+}
+
+.newTechniquesFlex{
+    display: flex;
+}
+
+.paragraphButtonFlex{
+    display: flex;
+    flex-direction: column;
+}
+
+.paragraphBlack{
+    @include paragraphBlack(.75rem);
+}
+
+.smallBoxImg{
+    box-shadow:-15px 15px $turquoiseBlue ;
 }
