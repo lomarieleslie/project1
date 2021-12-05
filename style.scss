@@ -14,18 +14,42 @@ html{
     font-size: 125%;
 }
 
+.wrapper {
+  max-width: 1900px;
+  margin: 0 auto;
+}
+
 h2 {
     @include header(2.5rem);
     height:300px;
-    width: 750px;
+    width: 655px;
     position: absolute;
+    margin-left: auto;
+    margin-right: auto;
     z-index: 2;
     top: 200px;
-
+    left:35px;
 }
 
-.headerHome{
+header{
+    height:900px;
+}
+
+.headerHome,
+.headerBlog,
+.headerContact{
     position: relative;
     z-index: 1;
     width: 100%;
+}
+.headerHome2{
+    width: 50%;
+    position: relative;
+    z-index: 4;
+    top: -275px;
+}
+
+h3{
+    @include header(1.5rem);
+
 }

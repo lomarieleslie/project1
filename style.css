@@ -267,9 +267,7 @@ ul {
   display: flex;
   justify-content: space-between;
   padding: 35px;
-  margin-left: 35px;
-  margin-right: 35px;
-  width: 100%;
+  width: 95%;
   position: absolute;
   z-index: 3;
 }
@@ -282,6 +280,11 @@ html {
   font-size: 125%;
 }
 
+.wrapper {
+  max-width: 1900px;
+  margin: 0 auto;
+}
+
 h2 {
   font-size: 2.5rem;
   color: #1A315C;
@@ -290,14 +293,39 @@ h2 {
   font-weight: lighter;
   letter-spacing: 2px;
   height: 300px;
-  width: 750px;
+  width: 655px;
   position: absolute;
+  margin-left: auto;
+  margin-right: auto;
   z-index: 2;
   top: 200px;
+  left: 35px;
 }
 
-.headerHome {
+header {
+  height: 900px;
+}
+
+.headerHome,
+.headerBlog,
+.headerContact {
   position: relative;
   z-index: 1;
   width: 100%;
+}
+
+.headerHome2 {
+  width: 50%;
+  position: relative;
+  z-index: 4;
+  top: -275px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #1A315C;
+  font-family: "Pacifico";
+  margin: 0;
+  font-weight: lighter;
+  letter-spacing: 2px;
 }/*# sourceMappingURL=style.css.map */
