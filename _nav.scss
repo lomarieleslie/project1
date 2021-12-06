@@ -47,10 +47,8 @@ ul {
 .navbar {
     display: flex;
     justify-content: space-between;
-    padding:35px;
-    width: 95%;
-    position: absolute;
-    z-index: 3;
+    padding:30px 0 65px 40px;
+    width: 90%;
 }
 
 nav ul li a.activePage{

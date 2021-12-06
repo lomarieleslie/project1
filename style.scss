@@ -9,6 +9,7 @@ $baseFont:"Lato";
 @import "normalize";
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pacifico&display=swap');
 @import "nav";
+@import "footer";
 
 @mixin paragraphBlack($sizeValue) {
     font-size: $sizeValue;
@@ -39,26 +40,43 @@ h2 {
     left:35px;
 }
 
-header{
-    height:900px;
+
+.headerHome {
+    background-image: url(./project-1-textilee/textilee-assets/header-home.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
 }
 
-.headerHome,
-.headerBlog,
-.headerContact{
-    position: relative;
-    z-index: 1;
-    width: 100%;
+.headerBlog{
+    background-image: url(./project-1-textilee/textilee-assets/blog-header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
+
+
+.headerContact{
+    background-image: url(./project-1-textilee/textilee-assets/contact-header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .headerHome2{
     width: 50%;
     position: relative;
-    z-index: 4;
-    top: -320px;
+    z-index: 1;
+    top:200px
+    
 }
 
 h3{
     @include header(1.5rem);
+    padding-top:30px;
+    padding-bottom: 20px;
 
 }
 
@@ -66,7 +84,7 @@ h3{
     height: auto;
     width: 100%;
     position: relative;
-    top:-240px;
+    top: 0;
     background-color: $lightSkyBlue;
     padding:200px
 }
@@ -84,6 +102,82 @@ h3{
     @include paragraphBlack(.75rem);
 }
 
+.learnNewTechniques .paragraphBlack{
+    width: 900px;
+}
+
 .smallBoxImg{
     box-shadow:-15px 15px $turquoiseBlue ;
+    margin-left: 150px;
+    margin-top: -80px;
+}
+
+.slateBlueButton{
+    width: 175px;
+    background-color: $darkSlateBlue;
+    color: $white;
+    font-weight: lighter;
+    border:none;
+    font-family: "Pacifico";
+}
+
+
+.gallery {
+    background-color: rgb(30, 56, 69);
+}
+
+.galleryFlex {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 75px;
+}
+
+.infoSection{
+    background-color: $lightSkyBlue;
+}
+
+.infoSection .wrapper{
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.upcomingEventsTitleFlex,
+.communityTitleFlex,
+.blogTitleFlex,
+.getInTouchTitleFlex{
+    display: flex;
+}
+
+.fas{
+    color: $white;
+    background-color: $turquoiseBlue;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top:8px;
+    margin-top: 10px;
+    margin-right: 10px;
+    align-self: center;
+}
+
+.colouredRope{
+    background-image: url(./project-1-textilee/textilee-assets/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    object-fit: contain;
+    height: 500px;
+}
+
+.searchByStyle{
+    background-color: $lightSkyBlue;
+    
+}
+
+.searchByStyleContent{
+    text-align:center;
+    padding:100px 400px 100px 400px;
 }
