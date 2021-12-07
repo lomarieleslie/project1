@@ -1,26 +1,50 @@
-$darkSlateBlue: #1A315C;
-$lightSkyBlue:#CCEDFB;
-$turquoiseBlue:#0CADC0;
-$black: #1E1713;
-$blackTwo:#161515;
+$darkSlateBlue: #1a315c;
+$lightSkyBlue: #ccedfb;
+$turquoiseBlue: #0cadc0;
+$black: #1e1713;
+$blackTwo: #161515;
 $white: #fff;
-$baseFont:"Lato";
+$baseFont: "Lato";
 
 @import "normalize";
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pacifico&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pacifico&display=swap");
 @import "nav";
 @import "footer";
+@import "buttons";
+
 
 @mixin paragraphBlack($sizeValue) {
-    font-size: $sizeValue;
-    font-family: "Lato";
-    color: $black;
-    letter-spacing: 2px;
-    line-height: 23px;
+  font-size: $sizeValue;
+  font-family: "Lato";
+  color: $black;
+  letter-spacing: 2px;
+  line-height: 23px;
 }
 
-html{
-    font-size: 125%;
+@mixin paragraphWhite($sizeValue) {
+    font-size: $sizeValue;
+    font-family: "Lato";
+    color: $white;
+    letter-spacing: 2px;
+    line-height: 23px;;
+    
+}
+
+@mixin whiteHeader($sizeValue){
+  font-size: $sizeValue;
+  color: $white;
+  font-family: "Pacifico";
+  margin: 0;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+    
+
+
+html {
+  font-size: 125%;
 }
 
 .wrapper {
@@ -29,155 +53,231 @@ html{
 }
 
 h2 {
-    @include header(2.5rem);
-    height:300px;
-    width: 655px;
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    z-index: 2;
-    top: 135px;
-    left:35px;
+  @include header(2.5rem);
+  height: 300px;
+  width: 655px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 2;
+  top: 135px;
+  left: 7%;
 }
-
 
 .headerHome {
-    background-image: url(./project-1-textilee/textilee-assets/header-home.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-   
+  background-image: url(./project-1-textilee/textilee-assets/header-home.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.headerBlog{
-    background-image: url(./project-1-textilee/textilee-assets/blog-header.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
+.headerBlog {
+  background-image: url(./project-1-textilee/textilee-assets/blog-header.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-
-.headerContact{
-    background-image: url(./project-1-textilee/textilee-assets/contact-header.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.headerContact {
+  background-image: url(./project-1-textilee/textilee-assets/contact-header.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.headerHome2{
-    width: 50%;
-    position: relative;
-    z-index: 1;
-    top:200px
-    
+.headerHome2 {
+  width: 50%;
+  position: relative;
+  z-index: 1;
+  top: 200px;
 }
 
-h3{
-    @include header(1.5rem);
-    padding-top:30px;
-    padding-bottom: 20px;
-
+h3 {
+  @include header(1.5rem);
+  padding-top: 30px;
+  padding-bottom: 20px;
 }
 
-.learnNewTechniques{
-    height: auto;
-    width: 100%;
-    position: relative;
-    top: 0;
-    background-color: $lightSkyBlue;
-    padding:200px
+.learnNewTechniques {
+  height: auto;
+  width: 100%;
+  position: relative;
+  top: 0;
+  background-color: $lightSkyBlue;
+  padding: 200px;
 }
 
-.newTechniquesFlex{
-    display: flex;
+.newTechniquesFlex {
+  display: flex;
 }
 
-.paragraphButtonFlex{
-    display: flex;
-    flex-direction: column;
+.paragraphButtonFlex {
+  display: flex;
+  flex-direction: column;
 }
 
-.paragraphBlack{
-    @include paragraphBlack(.75rem);
+.paragraphBlack {
+  @include paragraphBlack(0.75rem);
 }
 
-.learnNewTechniques .paragraphBlack{
-    width: 900px;
+.learnNewTechniques .paragraphBlack {
+  width: 900px;
 }
 
-.smallBoxImg{
-    box-shadow:-15px 15px $turquoiseBlue ;
-    margin-left: 150px;
-    margin-top: -80px;
+.smallBoxImg {
+  box-shadow: -15px 15px $turquoiseBlue;
+  margin-left: 150px;
+  margin-top: -80px;
 }
 
-.slateBlueButton{
-    width: 175px;
-    background-color: $darkSlateBlue;
-    color: $white;
-    font-weight: lighter;
-    border:none;
-    font-family: "Pacifico";
+.slateBlueButton {
+  width: 175px;
+  background-color: $darkSlateBlue;
+  color: $white;
+  font-weight: lighter;
+  border: none;
+  font-family: "Pacifico";
+  padding: 5px;
+  margin-top: 40px
 }
-
 
 .gallery {
-    background-color: rgb(30, 56, 69);
+  background-color: rgb(30, 56, 69);
 }
 
 .galleryFlex {
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly;
-    padding: 75px;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  padding: 75px;
+  gap:30px;
 }
 
-.infoSection{
-    background-color: $lightSkyBlue;
+.infoSection {
+  background-color: $lightSkyBlue;
+  p{
+      text-align: justify;
+  }
+  h3{
+      margin-left: 12px;
+  }
 }
 
-.infoSection .wrapper{
-    display: flex;
-    width: 90%;
-    flex-direction: row;
-    flex-wrap: wrap;
+
+.wrapper {
+  display: flex;
+  width: 90%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 50px;
 }
 
 .upcomingEventsTitleFlex,
 .communityTitleFlex,
 .blogTitleFlex,
-.getInTouchTitleFlex{
+.getInTouchTitleFlex {
+  display: flex;
+  margin-left: -60px;
+}
+
+
+
+.eventsAndCommunity,
+.blogAndContact {
+  display: grid;
+  margin: 25px;
+  gap:100px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.fas {
+  color: $white;
+  background-color: $turquoiseBlue;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 8px;
+  margin-top: 10px;
+  margin-right: 10px;
+  align-self: center;
+}
+
+.colouredRope {
+  background-image: url(./project-1-textilee/textilee-assets/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  object-fit: contain;
+  height: 500px;
+}
+
+.searchByStyle {
+  background-color: $lightSkyBlue;
+}
+
+.searchByStyleContent {
+  text-align: center;
+  padding: 100px 250px 100px 250px;
+}
+
+
+.discoverNewLocations{
+    background-color: rgb(30, 56, 69);
+}
+
+.newLocationsFlex,
+.discoverOnlineMarketFlex {
     display: flex;
+    justify-content: space-between;
 }
 
-.fas{
-    color: $white;
-    background-color: $turquoiseBlue;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    text-align: center;
-    padding-top:8px;
-    margin-top: 10px;
-    margin-right: 10px;
-    align-self: center;
+.newLocationsParagraph,
+.onlineMarketParagraph{
+    display: flex;
+    flex-direction: column;
+    width: 475px;
 }
 
-.colouredRope{
-    background-image: url(./project-1-textilee/textilee-assets/banner.jpg);
-    background-size: cover;
-    background-position: center;
-    object-fit: contain;
-    height: 500px;
+.newLocationsParagraph{
+   text-align: right;
+   margin-left: 180px;
+   padding-top: 20px;
 }
 
-.searchByStyle{
-    background-color: $lightSkyBlue;
-    
+.onlineMarketParagraph{
+    text-align: left;
+    margin-right: 180px;
+    margin-top: 40px
 }
 
-.searchByStyleContent{
-    text-align:center;
-    padding:100px 400px 100px 400px;
+.paragraphWhite{
+    @include paragraphWhite(0.75rem)
+}
+
+.lightBlueButton{
+    @include lightBlueButton;
+
+}
+
+.lightBlueButtonTwo{
+    @include lightBlueButton;
+    align-self: flex-end;
+}
+
+
+
+h4 {
+    @include whiteHeader(1.5rem)
+}
+
+.rightImage {
+   box-shadow: -15px 15px #0cadc0;
+   position: relative;
+   bottom: -35px;
+}
+
+.leftImage{
+    box-shadow: 15px 15px #0cadc0;
+    position: relative;
+    top:-30px;
 }

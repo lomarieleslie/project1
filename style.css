@@ -238,7 +238,7 @@ html {
 
 nav a {
   font-size: 0.75rem;
-  color: #1A315C;
+  color: #1a315c;
   letter-spacing: 1.4px;
   font-family: "Lato";
   text-decoration: none;
@@ -266,12 +266,12 @@ ul {
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 30px 0 65px 40px;
-  width: 90%;
+  width: 100%;
+  margin-bottom: 200px;
 }
 
 nav ul li a.activePage {
-  border-bottom: #0CADC0 1px solid;
+  border-bottom: #0cadc0 1px solid;
 }
 
 footer {
@@ -294,7 +294,7 @@ html {
 
 h2 {
   font-size: 2.5rem;
-  color: #1A315C;
+  color: #1a315c;
   font-family: "Pacifico";
   margin: 0;
   font-weight: lighter;
@@ -306,7 +306,7 @@ h2 {
   margin-right: auto;
   z-index: 2;
   top: 135px;
-  left: 35px;
+  left: 7%;
 }
 
 .headerHome {
@@ -339,7 +339,7 @@ h2 {
 
 h3 {
   font-size: 1.5rem;
-  color: #1A315C;
+  color: #1a315c;
   font-family: "Pacifico";
   margin: 0;
   font-weight: lighter;
@@ -353,7 +353,7 @@ h3 {
   width: 100%;
   position: relative;
   top: 0;
-  background-color: #CCEDFB;
+  background-color: #ccedfb;
   padding: 200px;
 }
 
@@ -369,7 +369,7 @@ h3 {
 .paragraphBlack {
   font-size: 0.75rem;
   font-family: "Lato";
-  color: #1E1713;
+  color: #1e1713;
   letter-spacing: 2px;
   line-height: 23px;
 }
@@ -379,18 +379,20 @@ h3 {
 }
 
 .smallBoxImg {
-  box-shadow: -15px 15px #0CADC0;
+  box-shadow: -15px 15px #0cadc0;
   margin-left: 150px;
   margin-top: -80px;
 }
 
 .slateBlueButton {
   width: 175px;
-  background-color: #1A315C;
+  background-color: #1a315c;
   color: #fff;
   font-weight: lighter;
   border: none;
   font-family: "Pacifico";
+  padding: 5px;
+  margin-top: 40px;
 }
 
 .gallery {
@@ -402,17 +404,25 @@ h3 {
   width: 100%;
   justify-content: space-evenly;
   padding: 75px;
+  gap: 30px;
 }
 
 .infoSection {
-  background-color: #CCEDFB;
+  background-color: #ccedfb;
+}
+.infoSection p {
+  text-align: justify;
+}
+.infoSection h3 {
+  margin-left: 12px;
 }
 
-.infoSection .wrapper {
+.wrapper {
   display: flex;
   width: 90%;
   flex-direction: row;
   flex-wrap: wrap;
+  padding: 50px;
 }
 
 .upcomingEventsTitleFlex,
@@ -420,11 +430,20 @@ h3 {
 .blogTitleFlex,
 .getInTouchTitleFlex {
   display: flex;
+  margin-left: -60px;
+}
+
+.eventsAndCommunity,
+.blogAndContact {
+  display: grid;
+  margin: 25px;
+  gap: 100px;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .fas {
   color: #fff;
-  background-color: #0CADC0;
+  background-color: #0cadc0;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -445,10 +464,93 @@ h3 {
 }
 
 .searchByStyle {
-  background-color: #CCEDFB;
+  background-color: #ccedfb;
 }
 
 .searchByStyleContent {
   text-align: center;
-  padding: 100px 400px 100px 400px;
+  padding: 100px 250px 100px 250px;
+}
+
+.discoverNewLocations {
+  background-color: #1e3845;
+}
+
+.newLocationsFlex,
+.discoverOnlineMarketFlex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.newLocationsParagraph,
+.onlineMarketParagraph {
+  display: flex;
+  flex-direction: column;
+  width: 475px;
+}
+
+.newLocationsParagraph {
+  text-align: right;
+  margin-left: 180px;
+  padding-top: 20px;
+}
+
+.onlineMarketParagraph {
+  text-align: left;
+  margin-right: 180px;
+  margin-top: 40px;
+}
+
+.paragraphWhite {
+  font-size: 0.75rem;
+  font-family: "Lato";
+  color: #fff;
+  letter-spacing: 2px;
+  line-height: 23px;
+}
+
+.lightBlueButton {
+  width: 175px;
+  background-color: #cad8f8;
+  color: #1e1713;
+  font-weight: lighter;
+  border: none;
+  font-family: "Pacifico";
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.lightBlueButtonTwo {
+  width: 175px;
+  background-color: #cad8f8;
+  color: #1e1713;
+  font-weight: lighter;
+  border: none;
+  font-family: "Pacifico";
+  padding: 5px;
+  margin-top: 10px;
+  align-self: flex-end;
+}
+
+h4 {
+  font-size: 1.5rem;
+  color: #fff;
+  font-family: "Pacifico";
+  margin: 0;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.rightImage {
+  box-shadow: -15px 15px #0cadc0;
+  position: relative;
+  bottom: -35px;
+}
+
+.leftImage {
+  box-shadow: 15px 15px #0cadc0;
+  position: relative;
+  top: -30px;
 }/*# sourceMappingURL=style.css.map */

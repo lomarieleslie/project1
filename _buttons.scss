@@ -1,0 +1,10 @@
+@mixin lightBlueButton {
+  width: 175px;
+  background-color: rgb(202, 216, 248);
+  color: $black;
+  font-weight: lighter;
+  border: none;
+  font-family: "Pacifico";
+  padding: 5px;
+  margin-top: 10px;
+}
