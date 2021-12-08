@@ -267,7 +267,7 @@ ul {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-bottom: 200px;
+  padding: 2% 7% 7% 7%;
 }
 
 nav ul li a.activePage {
@@ -283,30 +283,38 @@ footer {
   padding: 10px;
 }
 
-html {
-  font-size: 125%;
-}
-
-.wrapper {
-  max-width: 1900px;
-  margin: 0 auto;
-}
-
-h2 {
-  font-size: 2.5rem;
-  color: #1a315c;
-  font-family: "Pacifico";
-  margin: 0;
+.slateBlueButton {
+  width: 175px;
+  background-color: #1a315c;
+  color: #fff;
   font-weight: lighter;
-  letter-spacing: 2px;
-  height: 300px;
-  width: 655px;
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  z-index: 2;
-  top: 135px;
-  left: 7%;
+  border: none;
+  font-family: "Pacifico";
+  padding: 5px;
+  margin-top: 40px;
+}
+
+.lightBlueButton {
+  width: 175px;
+  background-color: #cad8f8;
+  color: #1e1713;
+  font-weight: lighter;
+  border: none;
+  font-family: "Pacifico";
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.lightBlueButtonTwo {
+  width: 175px;
+  background-color: #cad8f8;
+  color: #1e1713;
+  font-weight: lighter;
+  border: none;
+  font-family: "Pacifico";
+  padding: 5px;
+  margin-top: 10px;
+  align-self: flex-end;
 }
 
 .headerHome {
@@ -318,7 +326,7 @@ h2 {
 
 .headerBlog {
   background-image: url(./project-1-textilee/textilee-assets/blog-header.jpg);
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -337,6 +345,39 @@ h2 {
   top: 200px;
 }
 
+.headerHome h2 {
+  font-size: 2.5rem;
+  color: #1a315c;
+  font-family: "Pacifico";
+  margin: 0;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  height: 300px;
+  width: 655px;
+  position: absolute;
+  z-index: 2;
+  top: 135px;
+  left: 7%;
+}
+
+.headerBlog h2 {
+  font-size: 2.5rem;
+  color: #1a315c;
+  font-family: "Pacifico";
+  margin: 0;
+  font-weight: lighter;
+  letter-spacing: 2px;
+}
+
+html {
+  font-size: 125%;
+}
+
+.wrapper {
+  max-width: 1900px;
+  margin: 0 auto;
+}
+
 h3 {
   font-size: 1.5rem;
   color: #1a315c;
@@ -349,21 +390,22 @@ h3 {
 }
 
 .learnNewTechniques {
-  height: auto;
-  width: 100%;
   position: relative;
   top: 0;
   background-color: #ccedfb;
-  padding: 200px;
+  padding: 20% 8% 8%;
 }
 
 .newTechniquesFlex {
   display: flex;
+  justify-content: space-around;
+  gap: 45px;
 }
 
 .paragraphButtonFlex {
   display: flex;
   flex-direction: column;
+  width: 65%;
 }
 
 .paragraphBlack {
@@ -375,24 +417,13 @@ h3 {
 }
 
 .learnNewTechniques .paragraphBlack {
-  width: 900px;
+  width: 95%;
 }
 
 .smallBoxImg {
+  width: 25%;
+  height: 25%;
   box-shadow: -15px 15px #0cadc0;
-  margin-left: 150px;
-  margin-top: -80px;
-}
-
-.slateBlueButton {
-  width: 175px;
-  background-color: #1a315c;
-  color: #fff;
-  font-weight: lighter;
-  border: none;
-  font-family: "Pacifico";
-  padding: 5px;
-  margin-top: 40px;
 }
 
 .gallery {
@@ -409,20 +440,13 @@ h3 {
 
 .infoSection {
   background-color: #ccedfb;
+  padding: 50px 125px 75px 150px;
 }
 .infoSection p {
   text-align: justify;
 }
 .infoSection h3 {
   margin-left: 12px;
-}
-
-.wrapper {
-  display: flex;
-  width: 90%;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding: 50px;
 }
 
 .upcomingEventsTitleFlex,
@@ -436,7 +460,6 @@ h3 {
 .eventsAndCommunity,
 .blogAndContact {
   display: grid;
-  margin: 25px;
   gap: 100px;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -486,18 +509,18 @@ h3 {
 .onlineMarketParagraph {
   display: flex;
   flex-direction: column;
-  width: 475px;
+  width: 35%;
 }
 
 .newLocationsParagraph {
   text-align: right;
-  margin-left: 180px;
+  margin-left: 91px;
   padding-top: 20px;
 }
 
 .onlineMarketParagraph {
   text-align: left;
-  margin-right: 180px;
+  margin-right: 95px;
   margin-top: 40px;
 }
 
@@ -507,29 +530,6 @@ h3 {
   color: #fff;
   letter-spacing: 2px;
   line-height: 23px;
-}
-
-.lightBlueButton {
-  width: 175px;
-  background-color: #cad8f8;
-  color: #1e1713;
-  font-weight: lighter;
-  border: none;
-  font-family: "Pacifico";
-  padding: 5px;
-  margin-top: 10px;
-}
-
-.lightBlueButtonTwo {
-  width: 175px;
-  background-color: #cad8f8;
-  color: #1e1713;
-  font-weight: lighter;
-  border: none;
-  font-family: "Pacifico";
-  padding: 5px;
-  margin-top: 10px;
-  align-self: flex-end;
 }
 
 h4 {
@@ -547,10 +547,12 @@ h4 {
   box-shadow: -15px 15px #0cadc0;
   position: relative;
   bottom: -35px;
+  width: 40%;
 }
 
 .leftImage {
   box-shadow: 15px 15px #0cadc0;
   position: relative;
   top: -30px;
+  width: 40%;
 }/*# sourceMappingURL=style.css.map */

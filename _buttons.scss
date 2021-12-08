@@ -8,3 +8,30 @@
   padding: 5px;
   margin-top: 10px;
 }
+
+@mixin slateBlueButton {
+  width: 175px;
+  background-color: $darkSlateBlue;
+  color: $white;
+  font-weight: lighter;
+  border: none;
+  font-family: "Pacifico";
+  padding: 5px;
+  margin-top: 40px
+}
+
+
+.slateBlueButton {
+  @include slateBlueButton()
+}
+
+
+.lightBlueButton{
+    @include lightBlueButton;
+
+}
+
+.lightBlueButtonTwo{
+    @include lightBlueButton;
+    align-self: flex-end;
+}

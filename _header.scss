@@ -1,0 +1,50 @@
+
+// Header Background
+
+
+.headerHome {
+  background-image: url(./project-1-textilee/textilee-assets/header-home.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.headerBlog {
+  background-image: url(./project-1-textilee/textilee-assets/blog-header.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.headerContact {
+  background-image: url(./project-1-textilee/textilee-assets/contact-header.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+// Home Page Header Styles
+
+.headerHome2 {
+  width: 50%;
+  position: relative;
+  z-index: 1;
+  top: 200px;
+}
+
+.headerHome h2 {
+  @include header(2.5rem);
+  height: 300px;
+  width: 655px;
+  position: absolute;
+  z-index: 2;
+  top: 135px;
+  left: 7%;
+}
+
+
+// Blog Header Styles
+
+.headerBlog h2{
+    @include header(2.5rem);
+}

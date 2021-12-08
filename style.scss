@@ -11,7 +11,7 @@ $baseFont: "Lato";
 @import "nav";
 @import "footer";
 @import "buttons";
-
+@import "header";
 
 @mixin paragraphBlack($sizeValue) {
   font-size: $sizeValue;
@@ -52,45 +52,7 @@ html {
   margin: 0 auto;
 }
 
-h2 {
-  @include header(2.5rem);
-  height: 300px;
-  width: 655px;
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  z-index: 2;
-  top: 135px;
-  left: 7%;
-}
 
-.headerHome {
-  background-image: url(./project-1-textilee/textilee-assets/header-home.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.headerBlog {
-  background-image: url(./project-1-textilee/textilee-assets/blog-header.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.headerContact {
-  background-image: url(./project-1-textilee/textilee-assets/contact-header.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.headerHome2 {
-  width: 50%;
-  position: relative;
-  z-index: 1;
-  top: 200px;
-}
 
 h3 {
   @include header(1.5rem);
@@ -99,21 +61,23 @@ h3 {
 }
 
 .learnNewTechniques {
-  height: auto;
-  width: 100%;
   position: relative;
   top: 0;
   background-color: $lightSkyBlue;
-  padding: 200px;
+  padding: 20% 8% 8%;
 }
+
 
 .newTechniquesFlex {
   display: flex;
+  justify-content: space-around;
+  gap: 45px;
 }
 
 .paragraphButtonFlex {
   display: flex;
   flex-direction: column;
+  width: 65%;
 }
 
 .paragraphBlack {
@@ -121,25 +85,15 @@ h3 {
 }
 
 .learnNewTechniques .paragraphBlack {
-  width: 900px;
+  width: 95%;
 }
 
 .smallBoxImg {
+  width: 25%;
+  height: 25%;  
   box-shadow: -15px 15px $turquoiseBlue;
-  margin-left: 150px;
-  margin-top: -80px;
 }
 
-.slateBlueButton {
-  width: 175px;
-  background-color: $darkSlateBlue;
-  color: $white;
-  font-weight: lighter;
-  border: none;
-  font-family: "Pacifico";
-  padding: 5px;
-  margin-top: 40px
-}
 
 .gallery {
   background-color: rgb(30, 56, 69);
@@ -155,6 +109,8 @@ h3 {
 
 .infoSection {
   background-color: $lightSkyBlue;
+  padding: 50px 125px 75px 150px;
+
   p{
       text-align: justify;
   }
@@ -163,14 +119,6 @@ h3 {
   }
 }
 
-
-.wrapper {
-  display: flex;
-  width: 90%;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding: 50px;
-}
 
 .upcomingEventsTitleFlex,
 .communityTitleFlex,
@@ -185,7 +133,6 @@ h3 {
 .eventsAndCommunity,
 .blogAndContact {
   display: grid;
-  margin: 25px;
   gap:100px;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -235,18 +182,18 @@ h3 {
 .onlineMarketParagraph{
     display: flex;
     flex-direction: column;
-    width: 475px;
+    width: 35%;
 }
 
 .newLocationsParagraph{
    text-align: right;
-   margin-left: 180px;
+   margin-left: 91px;
    padding-top: 20px;
 }
 
 .onlineMarketParagraph{
     text-align: left;
-    margin-right: 180px;
+    margin-right: 95px;
     margin-top: 40px
 }
 
@@ -254,15 +201,6 @@ h3 {
     @include paragraphWhite(0.75rem)
 }
 
-.lightBlueButton{
-    @include lightBlueButton;
-
-}
-
-.lightBlueButtonTwo{
-    @include lightBlueButton;
-    align-self: flex-end;
-}
 
 
 
@@ -274,10 +212,13 @@ h4 {
    box-shadow: -15px 15px #0cadc0;
    position: relative;
    bottom: -35px;
+   width: 40%;
 }
 
 .leftImage{
     box-shadow: 15px 15px #0cadc0;
     position: relative;
     top:-30px;
+    width: 40%;
 }
+
