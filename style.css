@@ -257,7 +257,7 @@ h1 {
   letter-spacing: 2px;
 }
 
-ul {
+header ul {
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -268,6 +268,7 @@ ul {
   justify-content: space-between;
   width: 100%;
   padding: 2% 7% 7% 7%;
+  position: relative;
 }
 
 nav ul li a.activePage {
@@ -325,17 +326,8 @@ footer {
 }
 
 .headerBlog {
-  background-image: url(./project-1-textilee/textilee-assets/blog-header.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.headerContact {
-  background-image: url(./project-1-textilee/textilee-assets/contact-header.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  width: 100%;
+  position: absolute;
 }
 
 .headerHome2 {
@@ -360,13 +352,24 @@ footer {
   left: 7%;
 }
 
-.headerBlog h2 {
+.blogTitle {
   font-size: 2.5rem;
   color: #1a315c;
   font-family: "Pacifico";
   margin: 0;
   font-weight: lighter;
   letter-spacing: 2px;
+  position: relative;
+  width: 15%;
+  left: 7%;
+}
+
+.contactHeaderBackground {
+  background-image: url(./project-1-textilee/textilee-assets/contact-header.jpg);
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+  height: 525px;
 }
 
 html {
@@ -376,6 +379,7 @@ html {
 .wrapper {
   max-width: 1900px;
   margin: 0 auto;
+  height: auto;
 }
 
 h3 {
@@ -555,4 +559,292 @@ h4 {
   position: relative;
   top: -30px;
   width: 40%;
+}
+
+.mainSection {
+  background-color: #ccedfb;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ourNewCollection {
+  width: 55%;
+  background-color: #1e3845;
+  box-shadow: 15px #0cadc0;
+  border-bottom: #0cadc0 15px solid;
+  position: relative;
+  top: 180px;
+}
+.ourNewCollection .date {
+  color: #ccedfb;
+  padding-left: 100px;
+}
+.ourNewCollection p {
+  font-size: 0.75rem;
+  font-family: "Lato";
+  color: #fff;
+  letter-spacing: 2px;
+  line-height: 23px;
+  display: inline;
+  white-space: pre-line;
+}
+
+.fullBlogEntry > h4:nth-child(1) {
+  padding-left: 100px;
+}
+
+.sideBar {
+  width: 20%;
+  background-color: #1e3845;
+  align-self: flex-end;
+}
+.sideBar img {
+  width: 95%;
+  position: relative;
+  top: -15px;
+  right: -15px;
+  -o-object-fit: none;
+     object-fit: none;
+}
+.sideBar ul {
+  padding-left: 10px;
+  font-size: 0.75rem;
+  font-family: "Lato";
+  color: #fff;
+  letter-spacing: 2px;
+  line-height: 23px;
+}
+
+.sideBarContent {
+  width: 90%;
+  text-align: left;
+  padding-left: 25px;
+  padding-bottom: 20px;
+}
+.sideBarContent h4:nth-child(1) {
+  padding-top: 6px;
+}
+
+.commentOneImg {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 30%;
+}
+
+.commentTwoImg {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 20%;
+}
+
+.blogComments {
+  background-color: #ccedfb;
+}
+
+div.commentFlex:nth-child(3) {
+  padding-top: 20px;
+}
+
+.commentHeader {
+  font-size: 1.5rem;
+  color: #161515;
+  font-family: "Pacifico";
+  margin: 0;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  letter-spacing: 3px;
+}
+
+.commentDate {
+  font-size: 0.75rem;
+  color: #1a315c;
+  font-weight: bold;
+  font-family: "Lato";
+  letter-spacing: 2px;
+  line-height: 23px;
+}
+
+.commentsContainer {
+  height: 600px;
+  width: 75%;
+  padding-top: 200px;
+  padding-left: 7%;
+}
+
+.blogPostImage {
+  width: 98.1%;
+  box-shadow: 15px 15px #0cadc0;
+  position: relative;
+  top: -16px;
+}
+
+.blogEntry {
+  padding-left: 100px;
+  padding-bottom: 75px;
+}
+
+.fullBlogEntry {
+  border-right: #0cadc0 15px solid;
+  margin-top: -7px;
+}
+
+.blogComment {
+  font-size: 0.5rem;
+  font-family: "Lato";
+  color: #1e1713;
+  letter-spacing: 2px;
+  line-height: 23px;
+  font-size: 0.6rem;
+  letter-spacing: 1.5px;
+  line-height: 20px;
+}
+
+.dateAndComment {
+  padding-top: 30px;
+}
+
+div.commentFlex:nth-child(2) > div:nth-child(2) > p:nth-child(1) {
+  padding-top: 10px;
+}
+
+.commentFlex {
+  display: flex;
+  gap: 30px;
+  width: 75%;
+}
+
+.blogCommentForm {
+  height: 500px;
+  width: 50%;
+  margin-left: 7%;
+}
+
+.nameAndEmailInput {
+  display: flex;
+}
+
+.commentAndSubmit {
+  display: flex;
+  flex-direction: column;
+}
+
+#comment {
+  resize: none;
+  background: transparent;
+  border: none;
+  border: #0cadc0 2px solid;
+  width: 85%;
+  margin: 30px auto;
+}
+
+.headerContact h2 {
+  font-size: 2.5rem;
+  color: #1a315c;
+  font-family: "Pacifico";
+  margin: 0;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  position: relative;
+  left: 7%;
+}
+
+.contactMainSection {
+  background-color: #ccedfb;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contactForm {
+  background-color: #1e3845;
+  box-shadow: 15px 15px #0cadc0;
+  width: 60%;
+  height: 600px;
+  position: relative;
+  top: -150px;
+  left: 7%;
+}
+
+.nameAndEmailInput {
+  margin-top: 50px;
+  margin-left: 7.5%;
+  gap: 32px;
+  margin-right: 7.5%;
+}
+
+#name,
+#email {
+  width: 50%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #0cadc0;
+  padding: 20px;
+}
+
+#comment {
+  padding: 20px;
+}
+
+#name::-moz-placeholder, #email::-moz-placeholder, #comment::-moz-placeholder {
+  font-size: 0.75rem;
+  font-family: "Lato";
+  font-weight: lighter;
+  letter-spacing: 2px;
+  opacity: 1;
+  color: #fff;
+  padding-bottom: 25px;
+  margin-top: 0px;
+}
+
+#name:-ms-input-placeholder, #email:-ms-input-placeholder, #comment:-ms-input-placeholder {
+  font-size: 0.75rem;
+  font-family: "Lato";
+  font-weight: lighter;
+  letter-spacing: 2px;
+  opacity: 1;
+  color: #fff;
+  padding-bottom: 25px;
+  margin-top: 0px;
+}
+
+#name::placeholder,
+#email::placeholder,
+#comment::placeholder {
+  font-size: 0.75rem;
+  font-family: "Lato";
+  font-weight: lighter;
+  letter-spacing: 2px;
+  opacity: 1;
+  color: #fff;
+  padding-bottom: 25px;
+  margin-top: 0px;
+}
+
+.submitButton {
+  width: 85%;
+  margin: 0 auto;
+  padding: 10px;
+  font-family: "Pacifico";
+  background-color: #cad8f8;
+  border: none;
+}
+
+.contactInfo {
+  width: 17%;
+  align-self: center;
+  margin-right: 100px;
+  text-align: left;
+  display: inline;
+  white-space: pre-line;
+  line-height: 10px;
+}
+
+.socialIcons {
+  display: flex;
+  letter-spacing: 24px;
+}
+
+.fab {
+  color: #1a315c;
 }/*# sourceMappingURL=style.css.map */

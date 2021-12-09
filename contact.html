@@ -9,11 +9,16 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/14397f9dca.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Contact</title>
   </head>
   <body>
     <header class="headerContact">
-      <div class="wrapper">
+        <div class="contactHeaderBackground">
+             <div class="wrapper">
         <div class="navbar">
           <h1>Textilee</h1>
           <nav>
@@ -28,8 +33,53 @@
       <h2>Get In Touch</h2>
       <!-- <img src="./project-1-textilee/textilee-assets/contact-header.jpg" class="headerContact" alt=""> -->
       </div>
+        </div>
+     
     </header>
-    <main></main>
-    <footer>Copyright © 2019 Juno College</footer>
+    <main>
+        <section class="contactMainSection">
+            <div class="contactForm">
+                <div class="nameAndEmailInput">
+                     <input type="text" name="name" placeholder="Name" id="name">
+                <input type="text" name="email" placeholder="Email address" id="email">
+                </div>
+               
+                <div class="commentAndSubmit">
+                     <textarea
+                name="comment"
+                placeholder="Message"
+                id="comment" cols="25" rows="10"
+              /></textarea>
+                <input class="submitButton" type="submit" value="submit">
+                </div>
+               
+            </div>
+
+            <div class="contactInfo">
+            <div class="socialIcons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+
+            <p class="paragraphBlack">info@email.com</p>
+            <p class="paragraphBlack">123 - 456 - 789
+                123 Queen Street West.
+                Unit 10
+                Toronto, Ontario
+                M5v2D5
+            </p>
+
+            </div>
+
+            
+
+
+        </section>
+    </main>
+    <footer>
+      <p>Copyright © 2019 Juno College</p>
+    </footer>
   </body>
 </html>

@@ -10,18 +10,16 @@
 }
 
 .headerBlog {
-  background-image: url(./project-1-textilee/textilee-assets/blog-header.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    width: 100%;
+    position: absolute;
 }
 
-.headerContact {
-  background-image: url(./project-1-textilee/textilee-assets/contact-header.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+// .headerContact {
+//   background-image: url(./project-1-textilee/textilee-assets/contact-header.jpg);
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }
 
 // Home Page Header Styles
 
@@ -45,6 +43,20 @@
 
 // Blog Header Styles
 
-.headerBlog h2{
+.blogTitle{
     @include header(2.5rem);
+    position: relative;
+    width: 15%;
+    left: 7%;
+}
+
+
+// Contact Page
+
+.contactHeaderBackground{
+    background-image: url(./project-1-textilee/textilee-assets/contact-header.jpg);
+	background-repeat: no-repeat;
+	position: relative;
+    background-size: cover;
+    height: 525px;
 }

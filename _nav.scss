@@ -38,7 +38,7 @@ h1 {
     @include title(1rem);
 }
 
-ul {
+header ul {
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -48,7 +48,8 @@ ul {
     display: flex;
     justify-content: space-between;
     width: 100%;
-   padding: 2% 7% 7% 7%;
+    padding: 2% 7% 7% 7%;
+    position: relative;
 }
 
 
