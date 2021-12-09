@@ -35,3 +35,20 @@
     @include lightBlueButton;
     align-self: flex-end;
 }
+
+
+button:hover{
+    background-color: $turquoiseBlue;
+    color: $blackTwo;
+}
+
+
+.submitButton:hover{
+    background-color: $turquoiseBlue;
+    color: $blackTwo;
+}
+
+.commentSubmit:hover{
+    background-color: $turquoiseBlue;
+    color: $blackTwo;
+}

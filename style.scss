@@ -52,7 +52,7 @@ html {
 
 h3 {
   @include header(1.5rem);
-  padding-top: 30px;
+  padding-top: 10px;
   padding-bottom: 20px;
 }
 
@@ -103,7 +103,7 @@ h3 {
 
 .infoSection {
   background-color: $lightSkyBlue;
-  padding: 50px 125px 75px 150px;
+  padding: 65px 125px 75px 150px;
 
   p {
     text-align: justify;
@@ -119,6 +119,11 @@ h3 {
 .getInTouchTitleFlex {
   display: flex;
   margin-left: -60px;
+}
+
+.blogAndContact {
+  margin-top: 60px;
+  margin-bottom: 20px;
 }
 
 .eventsAndCommunity,
@@ -139,6 +144,11 @@ h3 {
   margin-top: 10px;
   margin-right: 10px;
   align-self: center;
+}
+
+.fas:hover {
+  color: $darkSlateBlue;
+  background-color: $white;
 }
 
 .colouredRope {
@@ -269,26 +279,24 @@ h4 {
   }
 }
 .commentOneImg {
-    object-fit: contain;
-width: 30%;
-    
+  object-fit: contain;
+  width: 30%;
 }
 
-.commentTwoImg{
-    object-fit: contain;
-    width: 20%;
+.commentTwoImg {
+  object-fit: contain;
+  width: 20%;
 }
 .blogComments {
   background-color: #ccedfb;
 }
 
 div.commentFlex:nth-child(3) {
- padding-top: 20px;
+  padding-top: 20px;
 }
 
-
 .commentHeader {
-  @include title(1.5rem); 
+  @include title(1.5rem);
   padding-top: 30px;
   padding-bottom: 40px;
   letter-spacing: 3px;
@@ -331,14 +339,15 @@ div.commentFlex:nth-child(3) {
   font-size: 0.6rem;
   letter-spacing: 1.5px;
   line-height: 20px;
+  width: 90%;
 }
 
-.dateAndComment{
-    padding-top: 30px;
+.dateAndComment {
+  padding-top: 30px;
 }
 
 div.commentFlex:nth-child(2) > div:nth-child(2) > p:nth-child(1) {
- padding-top: 10px;
+  padding-top: 10px;
 }
 
 .commentFlex {
@@ -349,8 +358,7 @@ div.commentFlex:nth-child(2) > div:nth-child(2) > p:nth-child(1) {
 
 .blogCommentForm {
   height: 500px;
-  width: 50%;
-  margin-left: 7%;
+  width: 60%;
 }
 
 .nameAndEmailInput {
@@ -362,6 +370,17 @@ div.commentFlex:nth-child(2) > div:nth-child(2) > p:nth-child(1) {
   flex-direction: column;
 }
 
+.commentSubmit {
+  width: 85.5%;
+  align-self: center;
+  background-color: $darkSlateBlue;
+  border: 1px solid $darkSlateBlue;
+  color: $white;
+  font-family: "Pacifico";
+  border: none;
+  padding: 10px;
+}
+
 #comment {
   resize: none;
   background: transparent;
@@ -369,6 +388,19 @@ div.commentFlex:nth-child(2) > div:nth-child(2) > p:nth-child(1) {
   border: $turquoiseBlue 2px solid;
   width: 85%;
   margin: 30px auto;
+}
+
+.commentName::placeholder,
+.commentEmail::placeholder,
+.blogCommentEntry::placeholder {
+  font-size: 0.75rem;
+  font-family: "Lato";
+  font-weight: lighter;
+  letter-spacing: 2px;
+  opacity: 1;
+  color: $darkSlateBlue;
+  padding-bottom: 25px;
+  margin-top: 0px;
 }
 
 // Contact Page
@@ -400,7 +432,7 @@ div.commentFlex:nth-child(2) > div:nth-child(2) > p:nth-child(1) {
   gap: 32px;
   margin-right: 7.5%;
 }
-
+#firstName,
 #name,
 #email {
   width: 50%;
@@ -414,9 +446,9 @@ div.commentFlex:nth-child(2) > div:nth-child(2) > p:nth-child(1) {
   padding: 20px;
 }
 
-#name::placeholder,
-#email::placeholder,
-#comment::placeholder {
+.contactName::placeholder,
+.contactEmail::placeholder,
+.contactMessage::placeholder {
   font-size: 0.75rem;
   font-family: "Lato";
   font-weight: lighter;
@@ -433,8 +465,10 @@ div.commentFlex:nth-child(2) > div:nth-child(2) > p:nth-child(1) {
   padding: 10px;
   font-family: "Pacifico";
   background-color: #cad8f8;
+  border: 1px solid #ccedfb;
   border: none;
 }
+
 .contactInfo {
   width: 17%;
   align-self: center;
@@ -452,4 +486,17 @@ div.commentFlex:nth-child(2) > div:nth-child(2) > p:nth-child(1) {
 
 .fab {
   color: $darkSlateBlue;
+}
+
+.fab:hover {
+  color: $turquoiseBlue;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+input[type="text"] {
+  color: $white;
 }
