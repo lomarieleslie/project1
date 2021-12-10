@@ -9,6 +9,11 @@
   background-size: cover;
 }
 
+.navbar > a:nth-child(1) {
+ display: none;
+}
+
+
 .headerBlog {
     width: 100%;
     position: absolute;
