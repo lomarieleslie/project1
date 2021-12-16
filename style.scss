@@ -60,6 +60,10 @@ h3 {
   display: none;
 }
 
+.closeButton {
+  display: none;
+}
+
 .learnNewTechniques {
   position: relative;
   top: 0;
@@ -80,7 +84,7 @@ h3 {
 }
 
 .paragraphBlack {
-  @include paragraphBlack(0.75rem);
+  @include paragraphBlack(0.9rem);
 }
 
 .learnNewTechniques .paragraphBlack {
@@ -137,7 +141,10 @@ h3 {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.fas {
+.fa-calendar-check,
+.fa-users,
+.fa-file,
+.fa-phone {
   color: $white;
   background-color: $turquoiseBlue;
   width: 40px;
@@ -153,6 +160,7 @@ h3 {
 .fas:hover {
   color: $white;
   background-color: $blackTwo;
+  transition: 0.5s;
 }
 
 .colouredRope {
@@ -202,7 +210,7 @@ h3 {
 }
 
 .paragraphWhite {
-  @include paragraphWhite(0.75rem);
+  @include paragraphWhite(0.9rem);
 }
 
 h4 {
@@ -245,7 +253,7 @@ h4 {
     padding-left: 100px;
   }
   p {
-    @include paragraphWhite(0.75rem);
+    @include paragraphWhite(0.9rem);
     display: inline;
     white-space: pre-line;
   }
@@ -270,7 +278,7 @@ h4 {
 
   ul {
     padding-left: 10px;
-    @include paragraphWhite(0.75rem);
+    @include paragraphWhite(0.9rem);
   }
 }
 
@@ -309,7 +317,7 @@ div.commentFlex:nth-child(3) {
 }
 
 .commentDate {
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   color: $darkSlateBlue;
   font-weight: bold;
   font-family: "Lato";
@@ -341,8 +349,8 @@ div.commentFlex:nth-child(3) {
   margin-top: -7px;
 }
 .blogComment {
-  @include paragraphBlack(0.5rem);
-  font-size: 0.6rem;
+  @include paragraphBlack(0.8rem);
+  padding-top: 10px;
   letter-spacing: 1.5px;
   line-height: 20px;
   width: 90%;
@@ -456,7 +464,7 @@ div.commentFlex:nth-child(2) > div:nth-child(2) > p:nth-child(1) {
 .contactName::placeholder,
 .contactEmail::placeholder,
 .contactMessage::placeholder {
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   font-family: "Lato";
   font-weight: lighter;
   letter-spacing: 2px;
@@ -497,6 +505,7 @@ div.commentFlex:nth-child(2) > div:nth-child(2) > p:nth-child(1) {
 
 .fab:hover {
   color: $blackTwo;
+  transition: 0.5s;
 }
 
 textarea:focus,
@@ -507,7 +516,6 @@ input:focus {
 input[type="text"] {
   color: $white;
 }
-
 
 // MEDIA QUERIES
 
@@ -520,22 +528,34 @@ input[type="text"] {
     height: auto;
   }
 
-  .menuButton {
-    display: flex;
-    justify-content: end;
-    position: relative;
-    top: -70px;
+
+  .menuButton{
+    display: block;
+    z-index: 10;
+    color: black;
   }
 
-  .fa-bars {
-    color: $blackTwo;
-    background: none;
+
+  .menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: $white;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    z-index: 100;
   }
 
-  .fa-bars:hover {
-    color: $turquoiseBlue;
-    background: none;
+  .navItem{
+    margin: 16px 0;
   }
+
+  .menu.active{
+    left:0;
+  } 
 
   .navbar > a:nth-child(1) {
     display: flex;
@@ -559,7 +579,7 @@ input[type="text"] {
   }
 
   header ul {
-    display: none;
+    display: flex;
   }
 
   button {

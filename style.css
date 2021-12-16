@@ -234,10 +234,11 @@ html {
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-nav a {
-  font-size: 0.75rem;
+.navItem a {
+  font-size: 0.8rem;
   color: #1a315c;
   letter-spacing: 1.4px;
   font-family: "Lato";
@@ -249,7 +250,7 @@ nav a {
 }
 
 h1 {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #161515;
   font-family: "Pacifico";
   margin: 0;
@@ -263,12 +264,17 @@ header ul {
   flex-direction: row;
 }
 
-.navbar {
+.navBar {
   display: flex;
   justify-content: space-between;
   width: 100%;
   padding: 2% 7% 7% 7%;
   position: relative;
+}
+
+.navBar > h1:nth-child(1) > a:nth-child(1) {
+  text-decoration: none;
+  color: black;
 }
 
 nav ul li a.activePage {
@@ -277,6 +283,33 @@ nav ul li a.activePage {
 
 a:hover {
   color: #0cadc0;
+  transition: 0.5s;
+}
+
+.menuButton {
+  display: flex;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease;
+  background-color: #161515;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  display: grid;
+  width: 25px;
+  height: 4px;
+  margin: 3px auto;
+  transition: all 0.3s ease-in-out;
+  color: #1e1713;
+  background-color: #161515;
 }
 
 footer {
@@ -325,16 +358,19 @@ footer {
 button:hover {
   background-color: #0cadc0;
   color: #161515;
+  transition: 0.5s;
 }
 
 .submitButton:hover {
   background-color: #0cadc0;
   color: #161515;
+  transition: 0.5s;
 }
 
 .commentSubmit:hover {
   background-color: #0cadc0;
   color: #161515;
+  transition: 0.5s;
 }
 
 .headerHome {
@@ -342,10 +378,6 @@ button:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.navbar > a:nth-child(1) {
-  display: none;
 }
 
 .headerBlog {
@@ -420,6 +452,10 @@ h3 {
   display: none;
 }
 
+.closeButton {
+  display: none;
+}
+
 .learnNewTechniques {
   position: relative;
   top: 0;
@@ -440,7 +476,7 @@ h3 {
 }
 
 .paragraphBlack {
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   font-family: "Lato";
   color: #1e1713;
   letter-spacing: 2px;
@@ -500,7 +536,10 @@ h3 {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.fas {
+.fa-calendar-check,
+.fa-users,
+.fa-file,
+.fa-phone {
   color: #fff;
   background-color: #0cadc0;
   width: 40px;
@@ -516,6 +555,7 @@ h3 {
 .fas:hover {
   color: #fff;
   background-color: #161515;
+  transition: 0.5s;
 }
 
 .colouredRope {
@@ -566,7 +606,7 @@ h3 {
 }
 
 .paragraphWhite {
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   font-family: "Lato";
   color: #fff;
   letter-spacing: 2px;
@@ -617,7 +657,7 @@ h4 {
   padding-left: 100px;
 }
 .ourNewCollection p {
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   font-family: "Lato";
   color: #fff;
   letter-spacing: 2px;
@@ -645,7 +685,7 @@ h4 {
 }
 .sideBar ul {
   padding-left: 10px;
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   font-family: "Lato";
   color: #fff;
   letter-spacing: 2px;
@@ -695,7 +735,7 @@ div.commentFlex:nth-child(3) {
 }
 
 .commentDate {
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   color: #1a315c;
   font-weight: bold;
   font-family: "Lato";
@@ -728,12 +768,12 @@ div.commentFlex:nth-child(3) {
 }
 
 .blogComment {
-  font-size: 0.5rem;
+  font-size: 0.8rem;
   font-family: "Lato";
   color: #1e1713;
   letter-spacing: 2px;
   line-height: 23px;
-  font-size: 0.6rem;
+  padding-top: 10px;
   letter-spacing: 1.5px;
   line-height: 20px;
   width: 90%;
@@ -871,7 +911,7 @@ div.commentFlex:nth-child(2) > div:nth-child(2) > p:nth-child(1) {
 }
 
 .contactName::-moz-placeholder, .contactEmail::-moz-placeholder, .contactMessage::-moz-placeholder {
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   font-family: "Lato";
   font-weight: lighter;
   letter-spacing: 2px;
@@ -882,7 +922,7 @@ div.commentFlex:nth-child(2) > div:nth-child(2) > p:nth-child(1) {
 }
 
 .contactName:-ms-input-placeholder, .contactEmail:-ms-input-placeholder, .contactMessage:-ms-input-placeholder {
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   font-family: "Lato";
   font-weight: lighter;
   letter-spacing: 2px;
@@ -895,7 +935,7 @@ div.commentFlex:nth-child(2) > div:nth-child(2) > p:nth-child(1) {
 .contactName::placeholder,
 .contactEmail::placeholder,
 .contactMessage::placeholder {
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   font-family: "Lato";
   font-weight: lighter;
   letter-spacing: 2px;
@@ -936,6 +976,7 @@ div.commentFlex:nth-child(2) > div:nth-child(2) > p:nth-child(1) {
 
 .fab:hover {
   color: #161515;
+  transition: 0.5s;
 }
 
 textarea:focus,
@@ -955,20 +996,30 @@ input[type=text] {
   }
 
   .menuButton {
-    display: flex;
-    justify-content: end;
-    position: relative;
-    top: -70px;
+    display: block;
+    z-index: 10;
+    color: black;
   }
 
-  .fa-bars {
-    color: #161515;
-    background: none;
+  .menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    z-index: 100;
   }
 
-  .fa-bars:hover {
-    color: #0cadc0;
-    background: none;
+  .navItem {
+    margin: 16px 0;
+  }
+
+  .menu.active {
+    left: 0;
   }
 
   .navbar > a:nth-child(1) {
@@ -993,7 +1044,7 @@ input[type=text] {
   }
 
   header ul {
-    display: none;
+    display: flex;
   }
 
   button {

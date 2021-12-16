@@ -1,6 +1,4 @@
-
 // Header Background
-
 
 .headerHome {
   background-image: url(./project-1-textilee/textilee-assets/header-home.jpg);
@@ -9,16 +7,10 @@
   background-size: cover;
 }
 
-.navbar > a:nth-child(1) {
- display: none;
-}
-
-
 .headerBlog {
-    width: 100%;
-    position: absolute;
+  width: 100%;
+  position: absolute;
 }
-
 
 // Home Page Header Styles
 
@@ -39,23 +31,21 @@
   left: 7%;
 }
 
-
 // Blog Header Styles
 
-.blogTitle{
-    @include header(2.5rem);
-    position: relative;
-    width: 15%;
-    left: 7%;
+.blogTitle {
+  @include header(2.5rem);
+  position: relative;
+  width: 15%;
+  left: 7%;
 }
-
 
 // Contact Page
 
-.contactHeaderBackground{
-    background-image: url(./project-1-textilee/textilee-assets/contact-header.jpg);
-	background-repeat: no-repeat;
-	position: relative;
-    background-size: cover;
-    height: 525px;
+.contactHeaderBackground {
+  background-image: url(./project-1-textilee/textilee-assets/contact-header.jpg);
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+  height: 525px;
 }

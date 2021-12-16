@@ -1,62 +1,91 @@
 @mixin navFont($sizeValue) {
-    font-size: $sizeValue;
-    color: $darkSlateBlue;
-    letter-spacing: 1.4px;
-    font-family: "Lato";
-    text-decoration: none;
-    text-transform: uppercase;
-    list-style:none;
-    margin-left: 20px;
-    margin-right: 20px;
+  font-size: $sizeValue;
+  color: $darkSlateBlue;
+  letter-spacing: 1.4px;
+  font-family: "Lato";
+  text-decoration: none;
+  text-transform: uppercase;
+  list-style: none;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 @mixin title($sizeValue) {
-    font-size: $sizeValue;
-    color: $blackTwo;
-    font-family: "Pacifico";
-    margin: 0;
-    font-weight: lighter;
-    letter-spacing: 2px;
- 
+  font-size: $sizeValue;
+  color: $blackTwo;
+  font-family: "Pacifico";
+  margin: 0;
+  font-weight: lighter;
+  letter-spacing: 2px;
 }
 
 @mixin header($sizeValue) {
-    font-size: $sizeValue;
-    color: $darkSlateBlue;
-    font-family: "Pacifico";
-    margin: 0;
-    font-weight: lighter;
-    letter-spacing: 2px;
-    
+  font-size: $sizeValue;
+  color: $darkSlateBlue;
+  font-family: "Pacifico";
+  margin: 0;
+  font-weight: lighter;
+  letter-spacing: 2px;
 }
 
-nav a {
-    @include navFont(.75rem);
+.navItem a {
+  @include navFont(0.8rem);
 }
 
 h1 {
-    @include title(1rem);
+  @include title(1.1rem);
 }
 
 header ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 2% 7% 7% 7%;
-    position: relative;
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2% 7% 7% 7%;
+  position: relative;
+}
+.navBar > h1:nth-child(1) > a:nth-child(1) {
+  text-decoration: none;
+  color: black;
 }
 
-
-nav ul li a.activePage{
-    border-bottom: $turquoiseBlue 1px solid;
+nav ul li a.activePage {
+  border-bottom: $turquoiseBlue 1px solid;
 }
 
-a:hover{
-    color: $turquoiseBlue;
+a:hover {
+  color: $turquoiseBlue;
+  transition: 0.5s;
+}
+
+.menuButton {
+  display: flex;
+  cursor: pointer;
+}
+
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: $blackTwo
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  display: grid;
+  width: 25px;
+  height: 4px;
+  margin: 3px auto;
+  transition: all 0.3s ease-in-out;
+  color: $black;
+  background-color:$blackTwo;
 }
